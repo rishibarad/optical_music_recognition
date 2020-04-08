@@ -14,20 +14,13 @@ How to pre-process an image:
 3. In the output/staffs directory, there are portions of the staffs from the original image. 
 
 Breakdown of the files: 
-config.py -> configurations of some parameters that were used in the pre_process.py and adjust_photos.py
-pre_process.py -> pre-process already adjusted images
-adjust_photos.py -> adjusts a photo to further analysis
-photos folder : Used fore testing the pre-process implmentations. 
-output folder :
-  Images of the edge dectection methods used to adjust the photo
-          ├── 1canny.jpg
-          ├── 2with_contours.png
-          ├── 3adjusted_photo.png
-  Images of the staff lines detected and the highlighted start of the staff and end of the detected staff 
-          ├── 5lines.png
-          ├── 6staffs.png
-  The separate cropped out staff lines after the original photo has been adjusted 
-          └── staffs
-            ├── cropped0.png .. 
+1. config.py -> configurations of some parameters that were used in the pre_process.py and adjust_photos.py
+2. pre_process.py -> pre-process already adjusted images
+3. adjust_photos.py -> adjusts a photo to further analysis
+4. photos folder : Used fore testing the pre-process implmentations. 
+5. output folder : 
+  Images of the edge dectection methods used to adjust the photo: 1canny.jpg, 2with_contours.png, 3adjusted_photo.png
+  Images of the staff lines detected and the highlighted start of the staff and end of the detected staff: 5lines.png,           6staffs.png
+  The separate cropped out staff lines after the original photo has been adjusted (staffs folder) 
 
 
