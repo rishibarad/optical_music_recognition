@@ -13,7 +13,6 @@ How to pre-process an image:
 2. Run pre_process.py 
 3. In the output/staffs directory, there are portions of the staffs from the original image. 
 
-Example of output in the outputs
 Breakdown of the files: 
 config.py -> configurations of some parameters that were used in the pre_process.py and adjust_photos.py
 pre_process.py -> pre-process already adjusted images
