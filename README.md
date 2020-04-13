@@ -41,3 +41,7 @@ Breakdown of the files:
 10. vocabulary_442.txt -> Dictionary of agnostic encoding translations for the deep-learning model output.
 11. TestStaff.png -> Test image for example of running deep-learning model prediciton
 12. Models folder : Contains trained models for the deep-learning classification
+
+
+[1] J. Calvo-Zaragoza and D. Rizo. Camera-primus: Neural end-to-end optical music recognition on realistic monophonic scores. 2018.
+Available : https://github.com/OMR-Research/tf-end-to-end
