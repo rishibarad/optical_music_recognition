@@ -22,7 +22,7 @@ How to pre-process an image:
 
 How to run the model prediction and post-process the data:
 1. On line 10 of musescore442.py change the file path to be that of the executable for MuseScore3
-2. 
+2. In an Anaconda or similar environment run the following command: python ctc_predict.py -image TestStaff.png -model Models/agnostic_model.meta -vocabulary Data/vocabulary_442.txt
 
 Breakdown of the files: 
 1. config.py -> Configurations of some parameters that were used in the pre_process.py and adjust_photos.py
@@ -38,5 +38,5 @@ Breakdown of the files:
 9. staffs.png
   The separate cropped out staff lines after the original photo has been adjusted (staffs folder)
 10. vocabulary_442.txt -> Dictionary of agnostic encoding translations for the deep-learning model output.
-
-
+11. TestStaff.png -> Test image for example of running deep-learning model prediciton
+12. Models folder : Contains trained models for the deep-learning classification
