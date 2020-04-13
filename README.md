@@ -7,6 +7,7 @@ to give a final output of both printed sheet music and an instrumental audio tra
 By: Daniel Manwiller, Andreea Serban, Rishi Barad, John Day, and Adam Kahana
 
 Pre-process Images: config.py, pre_process.py, adjust_photos.py, photos folder, output folder
+
 Model Prediction and Post-Processing: ctc_predict.py, ctc_utils.py, musescore442.py, vocabulary_442.txt
 
 Version and Package Dependencies:
