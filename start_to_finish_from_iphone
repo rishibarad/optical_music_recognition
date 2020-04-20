@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#---TODO---: Edit path to your project directory
+cd /Users/JohnDay/Desktop/EECS442/project.nosync/optical_music_recognition
+#---TODO---: Edit the name of the anaconda enviroment (replace "eecs442_project_env3")
+source /anaconda3/bin/activate eecs442_project_env3 &&
+#----TODO---: Edit path to input image. Image should be located in your Shorcuts folder on iCloud. You can change where your phone saves the image by editting the app on Shortcuts
+python pre_process.py -image /Users/JohnDay/Library/Mobile\ Documents/iCloud~is~workflow~my~workflows/Documents/sheet_music.png && \
+python ctc_predict.py -image ./output/staffs/cropped0.png -model Models/papers_agnostic_model/agnostic_model.meta -vocabulary vocabulary_442.txt
