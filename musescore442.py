@@ -57,7 +57,7 @@ def agnostic2tiny(datastring):
                 time_signature = "2/2"
                 flag = 2
         else:
-            raise Exception('Not a valid symbol before finished time signature')
+            pass #raise Exception('Not a valid symbol before finished time signature')
         iterator += 1
     # end while()
     tinystring += time_signature # Setting the time signature
@@ -92,8 +92,8 @@ def agnostic2tiny(datastring):
 # end agnostic2tiny()
 
 def ShowMuseScore(datastring):
+    print(datastring)
     key_signature, tinystring = agnostic2tiny(datastring)
-    print(tinystring)
     # Parsing the tinyNotation data from the deep-learning model
     t = converter.parse(tinystring)
     t.keySignature = key.KeySignature(key_signature) 

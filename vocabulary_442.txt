@@ -68,9 +68,9 @@ n
 *C
 *C
 *C
-\clef.F-L3
-\clef.F-L4
-\clef.F-L5
+*G
+*G
+*G
 *G
 *G
 @0
