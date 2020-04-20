@@ -85,7 +85,7 @@ def detect_staffs(all_lines):
                 # Consider it the start of the next staff.
                 # If <5 - not enough lines detected. Probably an anomaly - reject.
                 staffs.append((lines[0], lines[-1]))
-            lines.clear()
+            del lines[:]
         lines.append(current_line)
 
     # Process the last line
