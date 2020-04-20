@@ -7,6 +7,7 @@ to give a final output of both printed sheet music and an instrumental audio tra
 By: Daniel Manwiller, Andreea Serban, Rishi Barad, John Day, and Adam Kahana
 
 Pre-process Images: config.py, pre_process.py, adjust_photos.py, photos folder, output folder
+
 Model Prediction and Post-Processing: ctc_predict.py, ctc_utils.py, musescore442.py, vocabulary_442.txt
 
 Version and Package Dependencies:
@@ -22,7 +23,7 @@ How to pre-process an image:
 
 How to run the model prediction and post-process the data:
 1. On line 10 of musescore442.py change the file path to be that of the executable for MuseScore3
-2. In an Anaconda or similar environment run the following command: "python ctc_predict.py -image TestStaff.png -model Models/agnostic_model.meta -vocabulary Data/vocabulary_442.txt". This should automatically open the output from the deep-learning model in MuseScore where it can be exported as a .pdf or a .mp3 audio file.
+2. In an Anaconda or similar environment run the following command: "python ctc_predict.py -image TestStaff.png -model Models/agnostic_model.meta -vocabulary vocabulary_442.txt". This should automatically open the output from the deep-learning model in MuseScore where it can be exported as a .pdf or a .mp3 audio file.
 
 Breakdown of the files: 
 1. config.py -> Configurations of some parameters that were used in the pre_process.py and adjust_photos.py
@@ -40,3 +41,7 @@ Breakdown of the files:
 10. vocabulary_442.txt -> Dictionary of agnostic encoding translations for the deep-learning model output.
 11. TestStaff.png -> Test image for example of running deep-learning model prediciton
 12. Models folder : Contains trained models for the deep-learning classification
+
+
+[1] J. Calvo-Zaragoza and D. Rizo. Camera-primus: Neural end-to-end optical music recognition on realistic monophonic scores. 2018.
+Available : https://github.com/OMR-Research/tf-end-to-end
