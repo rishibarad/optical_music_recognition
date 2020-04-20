@@ -61,8 +61,8 @@ n
 #
 #
 #
-#
-\\barline-L1
+# (Next Line is barline-L1)
+
 *C
 *C
 *C
