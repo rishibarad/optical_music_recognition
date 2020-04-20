@@ -12,3 +12,9 @@ KEY_WIDTH_DIVIDER = 40
 # WINDOW_WIDTH = 50
 WHITE_PIXELS_PERCENTAGE = 0.85
 WINDOW_SHIFT = 2
+
+#* Pathnames
+
+# pathnames for musescore442.py
+PATH_TO_MUSESCORE = '/Applications/MuseScore 3.app' # Mac
+# PATH_TO_MUSESCORE_ APP = 'C:\\Program Files\\MuseScore 3\\bin\\MuseScore3.exe' # Windows

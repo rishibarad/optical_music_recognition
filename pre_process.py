@@ -3,6 +3,8 @@ import sys
 import cv2
 import numpy as np
 
+import argparse
+
 from config import *
 from adjust_photos import adjust
 
@@ -129,8 +131,13 @@ def get_staffs(image):
     return staves
 
 def main():
+    parser = argparse.ArgumentParser(description='Preprocess photo of sheet music before OMR prediction.')
+    parser.add_argument('-image',  dest='image', type=str, required=True, help='Path to the input image.')
+    args = parser.parse_args()
+
     # path to the image
-    filename = "photos/real1.png"
+    # filename = "photos/real5.png"
+    filename = args.image  # Note: tested with .png; .jpg may not work
     image = cv2.imread(filename)
     adjusted_photo = adjust(image)
     staffs = get_staffs(adjusted_photo)

@@ -4,10 +4,11 @@ Created on Wed Apr  1 18:06:01 2020
 @author: Daniel Manwiller
 """
 from music21 import* # Importing everything from the music21 pakcage
+from config import PATH_TO_MUSESCORE
 
 # Setting the proper environment variables to find the installation of MuseScore3
 us = environment.UserSettings()
-us['musicxmlPath'] = 'C:\\Program Files\\MuseScore 3\\bin\\MuseScore3.exe'
+us['musicxmlPath'] = PATH_TO_MUSESCORE
 
 # Dictionaries for G Clef and C Clef
 g_dict = {'L0': "c", 'L1': "e", 'L-1': "A'", 'L2': "g", 'L-2': "F'", 
