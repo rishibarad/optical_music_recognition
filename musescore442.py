@@ -8,6 +8,7 @@ from config import PATH_TO_MUSESCORE
 
 # Setting the proper environment variables to find the installation of MuseScore3
 us = environment.UserSettings()
+#NOTE: Edit the config.py file to change path to Musescore app
 us['musicxmlPath'] = PATH_TO_MUSESCORE
 
 # Dictionaries for G Clef and C Clef
