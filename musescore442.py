@@ -32,7 +32,7 @@ def agnostic2tiny(datastring):
     
     # Making sure we have a clef
     if data[0][0] != '*':
-        raise Exception('No Clef Symbol Detected')
+        clef = "G" #raise Exception('No Clef Symbol Detected')
     else:
         clef = data[0][1]
     
