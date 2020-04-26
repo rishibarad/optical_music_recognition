@@ -1,3 +1,5 @@
+# prediction code mostly written by Calvo-Zaragoza and Rizo (with excpetion of call to musescore442)
+
 import argparse
 import tensorflow as tf
 import ctc_utils
