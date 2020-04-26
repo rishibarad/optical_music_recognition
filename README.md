@@ -26,7 +26,7 @@ How to run the model prediction and post-process the data:
 2. In an Anaconda or similar environment run the following command: "python ctc_predict.py -image TestStaff.png -model Models/agnostic_model.meta -vocabulary vocabulary_442.txt". This should automatically open the output from the deep-learning model in MuseScore where it can be exported as a .pdf or a .mp3 audio file.
 
 Breakdown of the files: 
-1. config.py -> Configurations of some parameters that were used in the pre_process.py and adjust_photos.py
+1. config.py -> Configurations of some parameters; mostly used in the pre_process.py and adjust_photos.py; also stores path to MuseScore app
 2. pre_process.py -> Pre-process already adjusted images
 3. adjust_photos.py -> Adjusts a photo to further analysis
 4. ctc_predict.py -> Edited from [1]. Added functionality to itegrate with musescore442.py 
