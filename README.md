@@ -4,7 +4,7 @@ A program that, given a standard smartphone image of printed monophonic sheet mu
 proper image preprocessing, music symbol extraction using our deep-learning model, and data post-processing
 to give a final output of both printed sheet music and an instrumental audio track of the original sheet music.
 
-By: Daniel Manwiller, Andreea Serban, Rishi Barad, John Day, and Adam Kahana
+By: Daniel Manwiller (dmanwill@umich.edu), Andreea Serban (aserban@umich.edu), Rishi Barad (rishib@umich.edu), John Day (johnmday@umich.edu), and Adam Kahana (kahanaa@umich.edu)
 
 Pre-process Images: config.py, pre_process.py, adjust_photos.py, photos folder, output folder
 
